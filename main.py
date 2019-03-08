@@ -1,6 +1,6 @@
 import discord
 
-TOKEN = 'NTUzMjM2NTg1NzM5NzE0NTYw.D2MxLQ.dzohlo96rV9WZpVO9WAJ8ag7nUo'
+TOKEN = '<BOT ID>'
 
 client = discord.Client()
 
