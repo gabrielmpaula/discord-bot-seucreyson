@@ -1,6 +1,11 @@
 import discord
 
-TOKEN = '<BOT ID>'
+import json
+
+with open('credentials.json') as f:
+    data = json.load(f)
+
+bot_token = data['bot_token']
 
 client = discord.Client()
 
@@ -14,7 +19,7 @@ async def on_message(message):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('!picks'):
-        msg = 'https://imgur.com/a/vN4v2aR'
+        msg = 'https://imgur.com/a/i4Ru5m9'
         await client.send_message(message.channel, msg)
 
 @client.event
