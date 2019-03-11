@@ -23,7 +23,7 @@ async def on_message(message):
         msg = 'https://imgur.com/a/i4Ru5m9'
         await client.send_message(message.channel, msg)
 
-    if message.content.('!tier'):
+    if message.content.startswith('!tier'):
         msg = 'https://imgur.com/DjqZm5p'
         await client.send_message(message.channel, msg)
 
@@ -34,4 +34,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run(TOKEN)
+client.run(client)
