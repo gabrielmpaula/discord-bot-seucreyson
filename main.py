@@ -18,8 +18,13 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
-    if message.content.startswith('!picks'):
+
+    if message.content.('!picks'):
         msg = 'https://imgur.com/a/i4Ru5m9'
+        await client.send_message(message.channel, msg)
+
+    if message.content.('!tier'):
+        msg = 'https://imgur.com/DjqZm5p'
         await client.send_message(message.channel, msg)
 
 @client.event
