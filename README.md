@@ -1,4 +1,4 @@
-# Bot do Discord com picks do Seu Creyson
+# Bot Lista de Picks do Grande Líder
 
 Bot do Discord desenvolvido em Python que envia a lista de picks do Seu Creyson de heróis para o jogo Dota 2 
 
