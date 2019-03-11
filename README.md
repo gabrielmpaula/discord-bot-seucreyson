@@ -4,12 +4,12 @@ Bot do Discord desenvolvido em Python que envia a lista de picks do Seu Creyson 
 
 ## Como instalar em seu servidor
 
-1. Acesse o link: https://discordapp.com/oauth2/authorize?client_id=553236585739714560&scope=bot&permissions=0
+1. Acesse esse [link](https://discordapp.com/oauth2/authorize?client_id=553236585739714560&scope=bot&permissions=0)
 2. Escolha o servidor
-3. Aproveite!
+3. Lanche seus adversários!
 
 ## Lista de comandos
 
-!hello - 'AÍ É JOGADÔ'  
-!picks - Lista de picks do SeuCreyson  
-!tier - Tier de heróis do GameLeap
+`!hello` - 'AÍ É JOGADÔ'  
+`!picks` - Lista de picks do SeuCreyson  
+`!tier` - Tier de heróis do GameLeap
