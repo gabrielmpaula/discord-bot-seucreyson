@@ -19,7 +19,7 @@ async def on_message(message):
         msg = '{0.author.mention} AÍ É JOGADÔ'.format(message)
         await client.send_message(message.channel, msg)
 
-    if message.content.('!picks'):
+    if message.content.startswith('!picks'):
         msg = 'https://imgur.com/a/i4Ru5m9'
         await client.send_message(message.channel, msg)
 
