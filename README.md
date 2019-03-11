@@ -10,6 +10,6 @@ Bot do Discord desenvolvido em Python que envia a lista de picks do Seu Creyson 
 
 ## Lista de comandos
 
-!hello - 'AÍ É JOGADÔ'
-!picks - Lista de picks do SeuCreyson
+!hello - 'AÍ É JOGADÔ'  
+!picks - Lista de picks do SeuCreyson  
 !tier - Tier de heróis do GameLeap
