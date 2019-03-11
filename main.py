@@ -16,7 +16,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('!hello'):
-        msg = 'Hello {0.author.mention}'.format(message)
+        msg = '{0.author.mention} AÍ É JOGADÔ'.format(message)
         await client.send_message(message.channel, msg)
 
     if message.content.('!picks'):
