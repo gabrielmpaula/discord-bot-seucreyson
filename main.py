@@ -36,6 +36,7 @@ async def on_message(message):
 
     if message.content.startswith('!patch'):
         patch = get_patch()
+        msg = 'Patch atual {}. Changelog: https://www.dota2.com/patches/{}'.format(patch, patch)
         await client.send_message(message.channel, patch)
 
 @client.event
