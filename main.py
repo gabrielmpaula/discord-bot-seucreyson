@@ -34,4 +34,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run(client)
+client.run(bot_token)
