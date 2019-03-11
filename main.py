@@ -1,6 +1,13 @@
 import discord
-
 import json
+from bs4 import BeautifulSoup
+import requests
+
+def get_patch():
+    page = requests.get('https://www.dota2.com/patches/')
+    soup = BeautifulSoup(page.text, 'html.parser')
+    current_patch = soup.find(class_='PatchTitle').contents[0]
+    return current_patch
 
 with open('credentials.json') as f:
     data = json.load(f)
@@ -26,6 +33,10 @@ async def on_message(message):
     if message.content.startswith('!tier'):
         msg = 'https://imgur.com/DjqZm5p'
         await client.send_message(message.channel, msg)
+
+    if message.content.startswith('!patch'):
+        patch = get_patch()
+        await client.send_message(message.channel, patch)
 
 @client.event
 async def on_ready():

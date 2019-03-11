@@ -103,3 +103,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 credentials_production.json
+testing.py
