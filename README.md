@@ -4,7 +4,7 @@ Bot do Discord desenvolvido em Python que envia a lista de picks do Seu Creyson 
 
 ## Como instalar em seu servidor
 
-1. Acesse esse [link](https://discordapp.com/oauth2/authorize?client_id=553236585739714560&scope=bot&permissions=0)
+1. Acesse esse [link](https://discordapp.com/api/oauth2/authorize?client_id=553236585739714560&permissions=0&scope=bot)
 2. Escolha o servidor
 3. Lanche seus adversários!
 
