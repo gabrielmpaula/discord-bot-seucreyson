@@ -14,3 +14,4 @@ Bot do Discord desenvolvido em Python que envia a lista de picks do Seu Creyson 
 `!picks` - Lista de picks do SeuCreyson  
 `!tier` - Tier de heróis do GameLeap
 `!patch` - Patch atual e link do changelog
+`!steam_id #steam_id` - Associa conta do discord ao steam_id

@@ -2,6 +2,8 @@ import discord
 import json
 from bs4 import BeautifulSoup
 import requests
+from data.player import Player
+
 
 def get_patch():
     page = requests.get('https://www.dota2.com/patches/')
@@ -38,6 +40,17 @@ async def on_message(message):
         patch = get_patch()
         msg = 'Patch atual: **{}**\nChangelog: https://www.dota2.com/patches/{}'.format(patch, patch)
         await client.send_message(message.channel, msg)
+
+    if message.content.startswith('!link_steam'):
+        numbers = [int(s) for s in message.content.split() if s.isdigit()]
+        steam_id = numbers[0]
+
+        player = Player(message.author)
+        player.link_steam_id(steam_id)
+
+        msg = 'JOGADÔ {0.author.mention} linkado ao steam_id: {}'.format(message, steam_id)
+        await client.send_message(message.channel, msg)
+
 
 @client.event
 async def on_ready():
