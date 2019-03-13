@@ -51,7 +51,7 @@ async def on_message(message):
         msg_author = 'JOGADÔ {0.author.mention}'.format(message)
         msg_steam_id = ' linkado ao steam_id: {}'.format(steam_id)
         msg = msg_author + msg_steam_id
-        await client.send_message(message.channel, msg )
+        await client.send_message(message.channel, msg)
 
 
 @client.event
