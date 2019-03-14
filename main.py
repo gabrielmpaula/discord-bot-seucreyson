@@ -29,7 +29,7 @@ async def on_message(message):
         await client.send_message(message.channel, msg)
 
     if message.content.startswith('!picks'):
-        msg = 'https://imgur.com/a/i4Ru5m9'
+        msg = 'https://imgur.com/a/vN4v2aR'
         await client.send_message(message.channel, msg)
 
     if message.content.startswith('!tier'):
